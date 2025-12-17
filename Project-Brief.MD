@@ -63,18 +63,29 @@
 ## Team 2 MBP
 |항목|내용|
 |---|---|
-|프로젝트명|한국어 특화 의료 멀티모달 ai 벤치마크 개발|
-|프로젝트 키워드|한국어 특화, 멀티모달, 메디컬 AI, 벤치마크 구축|
+|프로젝트명|소규모 의료 데이터 환경에서 의료 AI 성능을 신뢰성 있게 비교·평가하는 방법 연구|
+|프로젝트 키워드|의료 AI 벤치마크, 소규모 의료 데이터, 연합 평가(Federated Evaluation), Manifold Mixup, 합성 표현(Synthetic Representation)|
 |트랙|연구|
 |프로젝트멤버|김채영, 박지호, 정지현|
 |팀지도교수|황의원|
-|무엇을 만들고자 하는가|한국 대학원·연구소의 의료 인공지능 연구자, 국내 AI 연구센터, 공공 연구기관들을 위해 국내 의료 환경에 맞춘 영상과 텍스트를 결합한 한국어 의료 데이터셋을 확보·전처리하고, 이에 기반한 태스크 정의·지표 설계·평가 코드·베이스라인 모델을 포함하는 표준 벤치마크를 구축한다.|
+|무엇을 만들고자 하는가|국내 의료 AI 연구자와 의료기관을 위해, 소규모·비공개 의료 데이터 환경에서 데이터 희소성과 외부 반출 불가로 인해 모델 성능과 일반화 능력을 객관적으로 검증하기 어려운 문제를 해결하고자, Manifold Mixup 기반 합성 표현과 연합 평가(Federated Evaluation)를 결합한 효율적인 의료 AI 벤치마크 방법론을 제안 및 연구한다.|
 |고객|대학병원/의료원 AI센터, 의료 AI 스타트업, 학계 연구실, 공공연구기관, 규제기관·심사평가원, 모델/플랫폼 사업자|
-|Pain Point|1. 한국어 데이터/지표 부재<br>- 영어 중심 글로벌 벤치마크와 국내 환경 괴리<br>- 한국어 기반 데이터셋과 지표 부족<br>2. 기관 간 불일치<br>- 병원별 데이터 라벨·형식 불일치 → 학습/평가 어려움<br>3. 규제/보안 제약<br>- 개인정보 보호, IRB 심사 등으로 데이터 접근 제한<br>4. 실제 임상과 괴리<br>- 현재 벤치마크 과업은 실제 임상질문과 불일치 → 연구 성과의 현장 적용성 낮음|
+|Pain Point|1. 소규모·편향 의료 데이터 환경<br>
+- 국내 의료 데이터는 보안·법적 규제로 인해 다기관 대규모 수집이 불가능하며, 단일 기관·특정 장비·특정 질환에 편중됨
+<br>2. 기존 벤치마크의 비현실성<br>
+- 대규모 중앙 집중식 데이터셋을 전제로 한 기존 벤치마크는 실제 병원 환경에 적용 불가<br>3. 규제/보안 제약
+<br>3. 데이터 반출 및 개인정보 보호 문제<br>
+- 원본 의료영상 및 임상 데이터의 외부 공유가 불가능하여 공정한 다기관 평가가 어려움
+<br>4. 평가 신뢰도의 한계<br>
+- 데이터 수가 적을수록 모델 성능 평가의 분산이 커지고, 일반화·강건성 검증이 어려움|
 |사용할 소프트웨어 패키지의 명칭과 핵심기능/용도, 사용시나리오|VLMEvalKit와  MedicalEval Question-answering Score 등 사용하여, 데이터들을 표준화하고 베이스라인 후보들을 일괄 평가한다|
-|사용할 소프트웨어 패키지의 명칭과 URL|- [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), [MedicalEval QA Score](https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/MedicalEval/Question-answering_Score), [LLaVA-Med](https://github.com/microsoft/LLaVA-Med), [Med-Flamingo](https://github.com/snap-stanford/med-flamingo), [Qilin-Med](https://github.com/williamliujl/Qilin-Med-VL), [RadFM 영상](https://github.com/chaoyi-wu/RadFM), [PyTorch](https://github.com/pytorch/pytorch), [AI Hub](https://www.aihub.or.kr/aihubdata/data/list.do?currMenu=115&topMenu=100) [HIRA](https://opendata.hira.or.kr/home.do)|
+|사용할 소프트웨어 패키지의 명칭과 URL|- VLMEvalKit: https://github.com/open-compass/VLMEvalKit
+<br>
+- MedicalEval QA Score: https://github.com/OpenGVLab/Multi-Modality-Arena/tree/main/MedicalEval/Question-answering_Score
+<br>
+- GMAI-MMBench:https://huggingface.co/datasets/OpenGVLab/GMAI-MMBench |
 |팀그라운드룰|[GroundRule](https://github.com/capstone25-2-MBP/MBP/blob/main/GroudRule.md)|
-|최종수정일|2025.09.30|
+|최종수정일|2025.12.18|
 
   [Return Top](#2025-Fall-전체-프로젝트-리스트)
 
